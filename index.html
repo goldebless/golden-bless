@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Bênção Dourada</title>
+  <title>Golden Bless</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -16,30 +16,34 @@
     }
 
     .card {
+      position: relative;
       max-width: 420px;
       width: 100%;
     }
 
     .card img {
       width: 100%;
-      height: auto;
       display: block;
       border-radius: 12px;
     }
 
-    .links {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 15px;
+    /* BOTÕES INVISÍVEIS SOBRE AS FAIXAS */
+    .btn-instagram,
+    .btn-whatsapp {
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      height: 11%;
     }
 
-    .links a {
-      flex: 1;
-      text-align: center;
-      color: #fff;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 16px;
+    /* Instagram (faixa de cima) */
+    .btn-instagram {
+      top: 55%;
+    }
+
+    /* WhatsApp (faixa de baixo) */
+    .btn-whatsapp {
+      top: 69%;
     }
   </style>
 </head>
@@ -47,17 +51,21 @@
 <body>
 
   <div class="card">
-    <img src="IMG-20260113-WA0001.jpg" alt="Bênção Dourada">
+    <img src="IMG-20260113-WA0001.jpg" alt="Golden Bless">
 
-    <div class="links">
-      <a href="https://instagram.com/_goldenbless" target="_blank">
-        Instagram
-      </a>
+    <a
+      href="https://instagram.com/_goldenbless"
+      target="_blank"
+      class="btn-instagram"
+      aria-label="Instagram Golden Bless"
+    ></a>
 
-      <a href="https://wa.me/5519998972027" target="_blank">
-        WhatsApp
-      </a>
-    </div>
+    <a
+      href="https://wa.me/5519998972027"
+      target="_blank"
+      class="btn-whatsapp"
+      aria-label="WhatsApp Golden Bless"
+    ></a>
   </div>
 
 </body>
